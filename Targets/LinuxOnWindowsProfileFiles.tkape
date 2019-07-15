@@ -10,25 +10,53 @@ Targets:
         Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_history
         IsDirectory: false
         Recursive: false
-        Comment: ""
+        Comment: "Collects the .bash_history file for all unprivileged users who have profiles in the /home/ dir."
     -
         Name: .bash_logout
         Category: Windows Linux Profile
         Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_logout
         IsDirectory: false
         Recursive: false
-        Comment: ""
+        Comment: "Collects the .bash_logout file for all unprivileged users who have profiles in the /home/ dir."
     -
         Name: .bashrc
         Category: Windows Linux Profile
         Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bashrc
         IsDirectory: false
         Recursive: false
-        Comment: ""
+        Comment: "Collects the .bashrc file for all unprivileged users who have profiles in the /home/ dir."
     -
         Name: .profile
         Category: Windows Linux Profile
         Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.profile
         IsDirectory: false
         Recursive: false
-        Comment: ""
+        Comment: "Collects the .profile file for all unprivileged users who have profiles in the /home/ dir."
+    -
+        Name: root .bash_history
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_history
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the .bash_history file for the root user."
+    -
+        Name: root .bash_logout
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_logout
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the .bash_logout file for the root user."
+    -
+        Name: root .bashrc
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bashrc
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the .bashrc file for the root user."
+    -
+        Name: root .profile
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\root\.profile
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the .profile file for the root user."
