@@ -1,0 +1,20 @@
+Description: Linux on Windows System Logs
+Author: Alex Harmon
+Version: 1
+Id: GUID-ME-LATER
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ubuntu apt activity history log
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\var\log\apt\history.log
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the apt activity history log from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu dpkg activity log
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\var\log\dpkg.log
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the dpkg log from WSL Ubuntu deployments."
