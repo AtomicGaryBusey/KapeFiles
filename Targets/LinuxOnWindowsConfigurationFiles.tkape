@@ -1,0 +1,48 @@
+Description: Linux on Windows Configuration Files
+Author: Alex Harmon
+Version: 1
+Id: GUID-ME-LATER
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ubuntu cron jobs
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\cron.*\*
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects all cron jobs from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu DHCP client configuration
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\dhcp\dhclient.conf
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the DHCP client configuration file from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu init.d scripts
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\init.d\*
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects all init.d scripts from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu ldap configuration
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\ldap\ldap.conf
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the LDAP client configuration file from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu SSH client and daemon configuration
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\ssh\*_config
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the SSH client and daemon configuration files from WSL Ubuntu deployments."
+    -
+        Name: Ubuntu fstab
+        Category: Windows Linux Profile
+        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\etc\fstab
+        IsDirectory: false
+        Recursive: false
+        Comment: "Collects the fstab file system configuration file from WSL Ubuntu deployments."
